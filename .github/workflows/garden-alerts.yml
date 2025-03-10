@@ -1,0 +1,3 @@
+ ```yaml
+# Define the workflow name and triggers
+# Schedule to run daily at 10:00 AM UTC and allow manual trigger
