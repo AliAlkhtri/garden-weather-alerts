@@ -26,6 +26,6 @@ jobs:
 
       - name: Run weather-alert.js
         env:
-          API_KEY: ${{ secrets.WEATHER_API_KEY }} # Your weather API key stored as a repository secret
-          LOCATION: ${{ secrets.LOCATION }} # Your location stored as a repository secret
+          API_KEY: ${{ secrets.ACCUWEATHER_API_KEY }} # Your weather API key stored as a repository secret
+          LOCATION: ${{ secrets.LOCATION_KEY }} # Your location stored as a repository secret
         run: node weather-alert.js
