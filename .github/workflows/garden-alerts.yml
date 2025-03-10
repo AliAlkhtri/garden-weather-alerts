@@ -1,4 +1,4 @@
-name: Daily Weather Alert
+name: Garden Weather Alert
 
 on:
   schedule:
