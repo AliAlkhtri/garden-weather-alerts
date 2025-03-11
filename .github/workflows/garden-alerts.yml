@@ -26,11 +26,9 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
-        working-directory: ./garden-weather-alerts  # Corrected path
 
       - name: List installed packages
         run: npm list
-        working-directory: ./garden-weather-alerts  # Corrected path
 
       - name: Debug environment variables
         run: echo "API_KEY=${{ secrets.ACCUWEATHER_API_KEY }} LOCATION=${{ secrets.LOCATION_KEY }}"
