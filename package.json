@@ -23,9 +23,8 @@
   },
   "homepage": "https://github.com/shinybrightstar/garden-weather-alerts#readme",
   "dependencies": {
-    "axios": "^1.2.0"  // Add your dependencies here
+    "axios": "^1.2.0"
   },
   "devDependencies": {
-    // Add your development dependencies here
   }
 }
