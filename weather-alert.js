@@ -1,5 +1,5 @@
 // Import required libraries
-const axios = require('axios');
+import axios from 'axios'; //const axios = require('axios');
 import { Octokit } from '@octokit/rest'; //const { Octokit } = require('@octokit/rest');
 
 // Get environment variables (we'll store these securely later)
