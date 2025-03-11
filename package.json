@@ -22,6 +22,7 @@
     "url": "https://github.com/shinybrightstar/garden-weather-alerts/issues"
   },
   "homepage": "https://github.com/shinybrightstar/garden-weather-alerts#readme",
+  "type": "module",
   "dependencies": {
     "@octokit/rest": "^21.1.1",
     "axios": "^1.2.0"

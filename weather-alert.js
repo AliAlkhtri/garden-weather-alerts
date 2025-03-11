@@ -1,6 +1,6 @@
 // Import required libraries
 const axios = require('axios');
-const { Octokit } = require('@octokit/rest');
+import { Octokit } from '@octokit/rest'; //const { Octokit } = require('@octokit/rest');
 
 // Get environment variables (we'll store these securely later)
 const ACCUWEATHER_API_KEY = process.env.ACCUWEATHER_API_KEY;
