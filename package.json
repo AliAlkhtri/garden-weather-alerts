@@ -1,0 +1,15 @@
+{
+  "name": "garden-weather-alerts",
+  "version": "1.0.0",
+  "description": "A project to alert weather conditions for garden maintenance",
+  "main": "weather-alert.js",
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "garden-weather-alerts"
+  },
+  "author": "\"\"",
+  "license": "ISC"
+}
