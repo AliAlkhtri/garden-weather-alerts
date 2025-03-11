@@ -31,10 +31,16 @@ jobs:
         run: npm list
 
       - name: Debug environment variables
-        run: echo "API_KEY=${{ secrets.ACCUWEATHER_API_KEY }} LOCATION=${{ secrets.LOCATION_KEY }}"
+        run: |
+          echo "ACCUWEATHER_API_KEY=${{ secrets.ACCUWEATHER_API_KEY }}"
+          echo "LOCATION_KEY=${{ secrets.LOCATION_KEY }}"
+          echo "GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }}"
+          echo "GITHUB_REPOSITORY=${{ github.repository }}"
 
       - name: Run weather-alert.js
         env:
-          API_KEY: ${{ secrets.ACCUWEATHER_API_KEY }}  # Your weather API key stored as a repository secret
-          LOCATION: ${{ secrets.LOCATION_KEY }}  # Your location stored as a repository secret
+          ACCUWEATHER_API_KEY: ${{ secrets.ACCUWEATHER_API_KEY }}
+          LOCATION_KEY: ${{ secrets.LOCATION_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
         run: node weather-alert.js

@@ -8,6 +8,11 @@ const LOCATION_KEY = process.env.LOCATION_KEY;
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
 const GITHUB_REPOSITORY = process.env.GITHUB_REPOSITORY;
 
+if (!ACCUWEATHER_API_KEY || !LOCATION_KEY) {
+  console.error("Missing required environment variables: ACCUWEATHER_API_KEY or LOCATION_KEY");
+  process.exit(1);
+}
+
 // Initialize Octokit (GitHub API client)
 const octokit = new Octokit({
   auth: GITHUB_TOKEN
