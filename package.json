@@ -1,15 +1,31 @@
 {
   "name": "garden-weather-alerts",
   "version": "1.0.0",
-  "description": "A project to alert weather conditions for garden maintenance",
+  "description": "A project for monitoring garden weather alerts",
   "main": "weather-alert.js",
   "scripts": {
-    "test": "echo \\\"Error: no test specified\\\" && exit 1"
+    "start": "node weather-alert.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "garden-weather-alerts"
+    "url": "git+https://github.com/shinybrightstar/garden-weather-alerts.git"
   },
-  "author": "\"\"",
-  "license": "ISC"
+  "keywords": [
+    "weather",
+    "alerts",
+    "garden"
+  ],
+  "author": "shinybrightstar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shinybrightstar/garden-weather-alerts/issues"
+  },
+  "homepage": "https://github.com/shinybrightstar/garden-weather-alerts#readme",
+  "dependencies": {
+    "axios": "^1.2.0"  // Add your dependencies here
+  },
+  "devDependencies": {
+    // Add your development dependencies here
+  }
 }
