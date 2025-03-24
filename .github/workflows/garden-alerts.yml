@@ -1,8 +1,8 @@
 name: Garden Weather Alert
 
 on:
-  schedule:
-    - cron: "0 10 * * *"  # Run daily at 10:00 AM UTC
+  #schedule:
+    #- cron: "0 10 * * *"  # Run daily at 10:00 AM UTC
   workflow_dispatch:  # Allow manual triggering
 
 permissions:
